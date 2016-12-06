@@ -1,0 +1,28 @@
+﻿{
+  "name": "OutputDataset",
+  "properties": {
+    "structure": [
+      {
+        "name": "st",
+        "type": "Int64"
+      },
+      {
+        "name": "zip",
+        "type": "Int64"
+      },
+      {
+        "name": "cd",
+        "type": "Int64"
+      }
+    ],
+    "type": "AzureSqlTable",
+    "linkedServiceName": "AzureSqlLinkedService1",
+    "typeProperties": {
+      "tableName": "ziptocd"
+    },
+    "availability": {
+      "frequency": "Hour",
+      "interval": 1
+    }
+  }
+}

@@ -1,0 +1,34 @@
+﻿{
+  "name": "InputDataset",
+  "properties": {
+    "structure": [
+      {
+        "name": "ST",
+        "type": "Int64"
+      },
+      {
+        "name": "ZIP",
+        "type": "Int64"
+      },
+      {
+        "name": "CD",
+        "type": "Int64"
+      }
+    ],
+    "type": "AzureBlob",
+    "linkedServiceName": "AzureStorageLinkedService1",
+    "typeProperties": {
+      "folderPath": "landingzone/",
+      "fileName":  "ZIP2LD.csv",
+      "format": {
+        "type": "TextFormat",
+        "columnDelimiter": ","
+      }
+    },
+    "external": true,
+    "availability": {
+      "frequency": "Hour",
+      "interval": 1
+    }
+  }
+}
