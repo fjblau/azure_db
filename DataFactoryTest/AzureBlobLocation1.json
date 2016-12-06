@@ -3,7 +3,7 @@
   "properties": {
     "structure": [
       {
-        "name": "STATE",
+        "name": "ST",
         "type": "Int64"
       },
       {
